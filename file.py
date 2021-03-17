@@ -8,4 +8,15 @@ pi(p): \u03c1
 """
 
 
-df = df[df["key2"]>10]
+from fbchat import Client
+
+
+client = Client('filip.dabkowski.39501', 'jofhym-cyznEk-vofja4')
+
+messages = client.fetchThreadMessages(thread_id="100015183226720", limit=50)
+
+texts = [mess.text for mess in messages]
+texts.reverse()
+
+for t in texts:
+	print(t)

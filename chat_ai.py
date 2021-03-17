@@ -28,14 +28,17 @@ class BotAI:
 		for intent in self.data['intents']:
 			for pattern in intent['patterns']:
 				
+				# Change polish letters to normal
 				for p_l in self.polish_letters:
 					pattern = pattern.replace(p_l[0], p_l[1])
 				
 				doc = spacy_nlp(pattern)
 				
 				interpunction = [',', '.', '"', '\'', '?', '!']
+				# Break into basic words
 				wrds = [token.lemma_ for token in doc if not token.lemma_ in interpunction]
 				
+				# Set X and Y data sets
 				self.words.extend(wrds)
 				docs_x.append(wrds)
 				docs_y.append(intent['tag'])
@@ -43,13 +46,14 @@ class BotAI:
 				if intent['tag'] not in self.labels:
 					self.labels.append(intent['tag'])
 		
+		# Words, Labels sorting
 		self.words = sorted(list(set(self.words)))
-
 		self.labels = sorted(self.labels)
 
 		self.traning = []
 		self.output = []
-
+		
+		# Empty output list
 		out_empty = [0 for _ in range(len(self.labels))]
 
 		for x, doc in enumerate(docs_x):
@@ -57,15 +61,18 @@ class BotAI:
 			
 			wrds = doc
 			
+			# Creating input
 			for w in self.words:
 				if w in wrds:
 					bag.append(1)
 				else:
 					bag.append(0)
 			
+			# Setting correct Output Label
 			output_row = out_empty[:]
 			output_row[self.labels.index(docs_y[x])] = 1
 			
+			# Appent pattern input and correct output
 			self.traning.append(bag)
 			self.output.append(output_row)
 
@@ -104,6 +111,7 @@ class BotAI:
 		interpunction = [',', '.', '"', '\'', '?', '!']
 		s_words = [token.lemma_ for token in doc if not token.lemma_ in interpunction]
 		
+		# creating input vector
 		for se in s_words:
 			for i, w, in enumerate(words):
 				if w == se:

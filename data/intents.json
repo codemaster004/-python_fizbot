@@ -71,48 +71,48 @@
 			"responses": ["<lesson>"]
 		},
 		{
-			"tag": "fiz_kinetic_energy",
+			"tag": "fiz_energia_kinetyczna",
 			"patterns": ["energia kinetyczna", "energie kinetyczna", "energi kinetycznej", "energia k"],
 			"responses": ["wzor: Ek = (m * v\u00B2) / 2\nm - masa\nv - prędkość\n\nDeficja: Energia kinetyczna - energia, która posiada ciało będące w ruchu względem wybranego przez nas układu odniesienia. Energia kinetyczna jest równa pracy, wykonanej do rozpędzenia ciała do prędkości z jaką się porusza.\nJednostka: J (Dżul)"]
 		},
 		{
-			"tag": "fiz_potential_energy",
-			"patterns": ["energia potencjalnej", "energia potencjalna", "energi potencjalnej", "enegia p"],
+			"tag": "fiz_energia_potencjalna",
+			"patterns": ["energia potencjalnej", "energia potencjalna", "energi potencjalnej", "energia p"],
 			"responses": ["wzor: Ep = m * g * h\nm - masa\ng - przyspieszenie ziemskie\nh - wysokość, \n\nDefinicja: Energia potencjalna - energia, którą posiada ciało z uwagi na swoje położenie lub stan. Ciało posiadające energię potencjalną ma potencjał do wykonania pracy.\n\nJednostka: J (Dżul)"]
 		},
 		{
-			"tag": "fiz_period_of_vibration",
+			"tag": "fiz_okres_drgan",
 			"patterns": ["Okres drgan", "okres wachadla", "duze t", "wielkie t", "drgania", "okres"],
 			"responses": ["wzór (wachadło spręrzynowego):\nT = 2 \u03c0 * \u221a(m / k)\nm - masa\nk - współczynnik sprężystości\n\nwzór (wachadło matematyczne):\nT = 2 \u03c0 * \u221a(l / g)\nl - długosc wachadła\ng - przyspieszenie ziemskie\n\nDefinicja: okres ruchu (drgań) - czas w którym ciało wykonało jeden pełny obieg\n\nJednostka: J (Dżul)"]
 		},
 		{
-			"tag": "fiz_swing",
+			"tag": "fiz_wychylenie",
 			"patterns": ["wychylenie", "małe x"],
 			"responses": ["wzor: x = A * sin(\u03b1 + \u03c10)\nA - amplituda\n\u03b1 - alfa\n\u03c10 - faza początkowa\n\nJednostka: m (Metr)"]
 		},
 		{
-			"tag": "fiz_inertial_force",
+			"tag": "fiz_sila_bezwladnosci",
 			"patterns": ["siła bezwładności", "siłę bezwładności", "bezwładność", "siły bezwładności"],
 			"responses": ["wzor: Fb = -m * a\nm - masa\na - przyspieszenie\n\nDefinicja: siła bezwładności jest to siła pozorna działająca na ciało będące w układzie nieinercjalnym, spowodowana przyspieszeniem układu.\n\nJednostka: N (Newton)"]
 		},
 		{
-			"tag": "fiz_mathematical_pendulum",
+			"tag": "fiz_wachadlo_matematyczne",
 			"patterns": ["wachadło matematyczne", "wachadła matematycznego", "wahadło matematyczne"],
 			"responses": ["Wahadło matematyczne -  ciało zawieszone na długiej, nieważkiej, nierozciagliwej nitce której masa jest bardzo mała w porównaniu z masa wahadła"]
 		},
 		{
-			"tag": "fiz_harmonic_movement",
+			"tag": "fiz_ruch_harmoniczny",
 			"patterns": ["ruch harmoniczny", "ruchu harmonicznego", "ruch drgający", "ruch harmoniczny"],
 			"responses": ["ruch harmoniczny (drgający prosty) - ruch w którym działająca siła jest proporcjonalna do wychylenia ale skierowana przeciwnie"]
 		},
 		{
-			"tag": "fiz_frequency",
+			"tag": "fiz_czestotliwosc",
 			"patterns": ["częstotliwość", "czestotliwosc", "małe f"],
 			"responses": ["wzor: f = 1 / T\nT - okres drgań\n\ndefinicja: Częstotliwość - ilość obrotów wykonanych przez ciało w ciągu 1 sekundy.\nJednostką: Hz (herc)"]
 		},
 		{
-			"tag": "fiz_movement_phase",
-			"patterns": ["faza ruchu", "wzór na alfe", "alfa"],
+			"tag": "fiz_faza_ruchu",
+			"patterns": ["faza ruchu", "wzór alfe", "alfa"],
 			"responses": ["wzor: \u03b1 = \u03c9 * t\n\u03c9 - omega\nt - czas\n\ndefinicja: faza ruchu - wielkość ta określa kierunek i wartość wychylenia\n\nJednostka: rad (Radian)"]
 		},
 		{
@@ -121,57 +121,57 @@
 			"responses": ["Wzór: \u03c9 = 2 * π / T\n\nT - okres drgań\n\nDefinicja: Częstość kątowa (pulsacja) jest wielkością fizyczną opisującą drgania harmoniczne i określającą szybkość zmian fazy drgania.\nJednostka: rad/s (radian na sekundę)"]
 		},
 		{
-			"tag": "fiz_amplitude",
+			"tag": "fiz_amplituda",
 			"patterns": ["amplituda", "maksymalne wychylenie", "duze A", "wielki A"],
 			"responses": ["amplituda - maksymalne wychylenie z położenia równowagi\n\nJednostka: m (Metr)"]
 		},
 		{
-			"tag": "fiz_spring_force",
+			"tag": "fiz_sila_sprezystosci",
 			"patterns": ["siła sprężystości", "Sprężystość siła", "wielkie F sprezystosci", "duze F sprezyny"],
 			"responses": ["Wzór: Fs = -k * x\nk - współczynnik sprężystości\nx - wychylenie\n\nDefinicja: Siła sprężystości jest siłą przywracającą odkształconemu sprężyście ciału jego pierwotny kształt. Siła sprężystości jest proporcjonalna do odkształcenia ciała.\n\nJednostka: N (Newton)"]
 		},
 		{
-			"tag": "fiz_elasticity_coefficient",
+			"tag": "fiz_wspolczynnik_sprezystosci",
 			"patterns": ["współczynnik sprężystości", "współczynnik spręrzyny"],
 			"responses": ["Wzór: k = m * \u03c9\u00B2\nm - masa\n\u03c9 - omega\n\nDefinicja: Współczynnik sprężystości - stała określająca wielkość odkształcenia w odpowiedzi na siły działające na ciała sprężyste.\n\nJednostka: N/m (Newton ma metr)"]
 		},
 		{
-			"tag": "fiz_harmonic_velocity",
+			"tag": "fiz_predkosc_harminczna",
 			"patterns": ["Prędkość ruchu harmonicznym", "male v ruchu harmonicznego", "małe v harmoniczne", "prędkość", "szybkość"],
 			"responses": ["v = A * \u03c9 * cos(\u03c9 * t)\nA - amplituda\n\u03c9 - omega\nt - czas\n\nv max = A * \u03c9, ponieważ cos wynosi 1\nCiało posiada prędkość maksymalną w położeniu równowagi. W największym możliwym wychyleniu wynosi 0.\n\nJednostka: m/s (Metr na sekunde)"]
 		},
 		{
-			"tag": "frz_harmonic_force",
+			"tag": "frz_sila_harmoniczna",
 			"patterns": ["siła ruchu harmonicznym", "sile harmoniczna"],
 			"responses": ["F = -m * \u03c9\u00B2 * x\nm - masa\n\u03c9 - omega\nx - wychylenie\n\nPs. znak - oznacza zwrot przeciwny do wychylenia\n\nJednostka: N (Newton)"]
 		},
 		{
-			"tag": "fiz_harmonic_acceleration",
-			"patterns": ["przyspieszenie", "wzor na przyspiesznie", "małe a"],
+			"tag": "fiz_przyspieszenie_harmoniczne",
+			"patterns": ["przyspieszenie", "wzor przyspiesznie", "małe a"],
 			"responses": ["a = - \u03c9\u00B2 * x\n\u03c9 - omega\nx - wychylenie\n\na max = A * \u03c9\u00B2, ponieważ największe możliwe wychylenie to amplituda\nA - amplituda\n\nJednostka: m/s\u00B2 (Metr na sekunde kwadrat)"]
 		},
 		{
-			"tag": "fiz_energy_of_spring_pendulum",
+			"tag": "fiz_energia_wachadla_sprezynowego",
 			"patterns": ["energia wahadła sprężynowego", "energia ruchu harmonicznym", "energia sprężystości", "energia sprężyny"],
 			"responses": ["E = (m * \u03c9\u00B2 * A\u00B2) / 2\nm - masa\n\u03c9 - omega\nA - amplituda\n\nJednostka: J (Dżul)"]
 		},
 		{
-			"tag": "fiz_first_law_of_dynamics",
-			"patterns": ["pierwsza zasada dynamiki", "zasada dynamiki 1"],
+			"tag": "fiz_1_zasada_dynamiki",
+			"patterns": ["pierwsza zasada dynamiki", "zasada dynamiki 1", "dynamika 1"],
 			"responses": ["Jeżeli na ciało nie działają siły zewnętrzne lub działające siły równoważą się, to ciało pozostaje w spoczynku lub porusza się ruchem jednostajnym prostoliniowym względem inercjalnego układu odniesienia."]
 		},
 		{
-			"tag": "fiz_second_law_of_dynamics",
-			"patterns": ["druga zasada dynamiki", "zasada dynamiki 2"],
+			"tag": "fiz_2_zasada_dynamiki",
+			"patterns": ["druga zasada dynamiki", "zasada dynamiki 2", "dynamika 2"],
 			"responses": ["Jeżeli siły działające na ciało nie równoważą się to ciało porusza się z przyspieszeniem wprost proporcjonalnym do wypadkowej sił działające na to ciało i odwrotnie proporcjonalnym do masy ciała\n\nwzor: a = Fw / m\na - przyspieszenie\nFw - siła wypadkowa\nm - masa"]
 		},
 		{
-			"tag": "fiz_third_law_of_dynamics",
-			"patterns": ["trzecia zasada dynamiki", "zasada dynamiki 3"],
+			"tag": "fiz_3_zasada_dynamiki",
+			"patterns": ["trzecia zasada dynamiki", "zasada dynamiki 3", "dynamika 3"],
 			"responses": ["Gdy ciało A działa na ciało B pewną siłą to ciało B oddziałuje na ciało A z siłą o tej samej wartości tym samym kierunku lecz przeciwnych zwrotach siły te nie mogą się równoważyć ponieważ przyłożone są do dwóch różnych ciał"]
 		},
 		{
-			"tag": "fiz_spring_pendulum",
+			"tag": "fiz_wachadlo_sprezynowe",
 			"patterns": ["wahadło sprężynowe", "wachadła sprężynowego"],
 			"responses": ["Definicja: Wahadło sprężynowe - ciało zawieszone na sprężynie, które może wykonywać drgania swobodne pod wpływem działającej na ciało sprężyny."]
 		},
@@ -184,6 +184,86 @@
 			"tag": "fiz_radian",
 			"patterns": ["radian"],
 			"responses": ["Radian(rad) jest miarą kąta, w którym długość łuku jest równa promieniowi okręgu.\n\n360°=2π rad\n180°=π rad\n90°=π/2 rad\n45°=π/4 rad\n30°=π/6 rad\n\nRadian jest używany w ruchu po okręgu oraz w ruchu harmonicznym, przy obliczaniu funkcjii trygonometrycznych."]
+		},
+		{
+			"tag": "fiz_spadek_ciala",
+			"patterns": ["swobodny spadek ciała", "spadek ciala"],
+			"responses": ["swobodny spadek ciała - ruch jednostajny przyspieszony bez prędkości początkowej z przyspieszeniem ziemskim"]
+		},
+		{
+			"tag": "fiz_ruch_jednostajny",
+			"patterns": ["ruch jednostajny"],
+			"responses": ["ruch jednostajny - ruch w którym w takich samych przedziałach czasowych ciało pokonuje takie same odcinki drogi"]
+		},
+		{
+			"tag": "fiz_ruch_prostoliniowy",
+			"patterns": ["ruch jednostajny prostoliniowy", "ruch prostoliniowy"],
+			"responses": ["ruch jednostajny prostoliniowy - ruch odbywający się wzdłuż prostej ze stała prędkością"]
+		},
+		{
+			"tag": "fiz_ruch_przyspieszony",
+			"patterns": ["ruch przyspieszony"],
+			"responses": ["ruch przyspieszony - zmiana prędkości w czasie, przyspieszenie jest stałe"]
+		},
+		{
+			"tag": "fiz_prawo_archimedesa",
+			"patterns": ["prawo archimedesa", "prawo arhimedesa"],
+			"responses": ["prawo archimedesa - na każde ciało zanurzone w cieczy lub w gazie działa siła wyporu równa ciężarowi wyparte cieczy (lub gazu). siła wyporu skierowana do gory. objętość wspartej cieczy jest równa objętości zanurzonego ciała"]
+		},
+		{
+			"tag": "fiz_rzut_poziomy",
+			"patterns": ["rzut poziomy"],
+			"responses": ["rzut poziomy - ruch skladajacy sie z dwóch rzutów, ruchu jednostajnego w kierunku poziomym oraz swomodnego spadku ciala"]
+		},
+		{
+			"tag": "fiz_rzut_pinowy",
+			"patterns": ["rzut pionowy"],
+			"responses": ["rzut pionowy - ruch jednostajnie przyspieszony z predkoscia poczatkowa i przyspieszeniem ziemskim"]
+		},
+		{
+			"tag": "fiz_cieplo",
+			"patterns": ["cieplo", "wielkie Q", "duze Q"],
+			"responses": ["Q ciepło - to przepływ energii między dwoma układami (ciałami na skutek różnicy temperatur). ciepło nie jest formą energii lecz sposobem przekazywania energii"]
+		},
+		{
+			"tag": "fiz_przewodnictwo_cieplne",
+			"patterns": ["przewodnictwo cieplne"],
+			"responses": ["przewodnictwo cieplne - proces w którym energia cieplna czyli energia bezwładnego ruchu cząsteczek jest przekazywana w procesie zdarzeń"]
+		},
+		{
+			"tag": "fiz_konwekcja",
+			"patterns": ["konwekcja"],
+			"responses": ["konwekcja - to transport ciepła który wynika z mikroskopowego ruchu masy cieczy lub gazu"]
+		},
+		{
+			"tag": "fiz_cieplo_topnienia",
+			"patterns": ["cieplo topnienia"],
+			"responses": ["ciepło topnienia L - ilość ciepła która należy dostarczy aby 1kg ciała stałego zamienił w ciecz o tej samej temperaturze"]
+		},
+		{
+			"tag": "fiz_gaz_doskonaly",
+			"patterns": ["model gazu doskonałego", "gaz doskonały"],
+			"responses": ["model gazu doskonałego\n- gaz składa się z cząsteczek które traktujemy jako punkty materialne to znaczy rozmiary cząsteczek są zaniedbywalne w porównaniu ze średnimi odległościami między nimi\n- cząsteczki są w nieustającym, bezwładnym ruchu, poruszają się po liniach prostych niezależnie od siebie\n- cząsteczki nie oddziałują miedzy sobą na odległość. Działają na siebie jedynie w momentach zderzeń\n- Zderzenia cząsteczek są idealnie sprężyste"]
+		},
+		{
+			"tag": "fiz_1_zasada_termodynamiki",
+			"patterns": ["1 zasada termodynamiki", "pierwsza zasada termodynamiki"],
+			"responses": ["Ciepło i praca są sobie równoważne i mogą powodować taki sam rezultat-zmianę energi wewnętrznej"]
+		},
+		{
+			"tag": "fiz_silnik_cieplny",
+			"patterns": ["silnik cieplny"],
+			"responses": ["silnik cieplny to urządzenie które pracuje cyklicznie i zamienia cześć dostarczonego ciepła na prace"]
+		},
+		{
+			"tag": "fiz_fala_mechaniczna",
+			"patterns": ["fala mechaniczna"],
+			"responses": ["Fala mechaniczna jest to zaburzenie ośrodka sprzezystego rozchodzące się w przestrzeni. Czasteczki ośrodka w którym rozchodzi się fala wykonują drgania, wokół położenia równowagi i przekazują energię kolejnym cząsteczkom tego ośrodka"]
+		},
+		{
+			"tag": "fiz_rodzaje_fal",
+			"patterns": ["rodzaje fal"],
+			"responses": ["Rodzaje fal:\nze względy na rodzaj ośrodka:\n- fals liniowe - fala an gumowym werzy\n- fale powierzchniowe - fala na powierzchni wody\n- fale przestrzenny kuliste - fala dźwiękową\nze względu na kierunek drgań cząsteczek ośrodka:\n- fala poprzeczna - cząsteczki ośrodka drgają protopadle do kierunku rozchodzenia się fal\n- fala podłużna - cząsteczki ośrodka drgają ruwnolegle do kierunku rozchodzenia się fal\n- fale złożone - równocześnie zachodzą drgania rownolegle i prostopadle do kierunku rozchodzenia się fal"]
 		}
 	]
 }

@@ -1,0 +1,27 @@
+energia k;fiz_energia_kinetyczna
+energia kinetyczna;fiz_energia_kinetyczna
+energia p;fiz_energia_potencjalna
+energia potencjalna;fiz_energia_potencjalna
+wielkie t;fiz_okres_drgan
+duze t;fiz_okres_drgan
+małe x;fiz_wychylenie
+bezwładność;fiz_sila_bezwladnosci
+małe f;fiz_czestotliwosc
+wielkie A;fiz_amplituda
+duze F sprezyny;fiz_sila_sprezystosci
+spadek ciala;fiz_spadek_ciala
+ruch jednostajny;fiz_ruch_jednostajny
+ruch prostoliniowy;fiz_ruch_prostoliniowy
+ruch przyspieszony;fiz_ruch_przyspieszony
+prawo arhimedesa;fiz_prawo_archimedesa
+rzut poziomy;fiz_rzut_poziomy
+rzut pionowy;fiz_rzut_pinowy
+duze Q;fiz_cieplo
+przewodnictwo cieplne;fiz_przewodnictwo_cieplne
+konwekcja;fiz_konwekcja
+cieplo topnienia;fiz_cieplo_topnienia
+gaz doskonały;fiz_gaz_doskonaly
+1 zasada termodynamiki;fiz_1_zasada_termodynamiki
+silnik cieplny;fiz_silnik_cieplny
+fala mechaniczna;fiz_fala_mechaniczna
+rodzaje fal;fiz_rodzaje_fal

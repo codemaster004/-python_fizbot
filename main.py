@@ -4,6 +4,7 @@ from chat_database import ChatDB
 from fbchat import Client
 from fbchat.models import *
 import json
+from datetime import datetime
 
 
 my_bot = BotAI()
@@ -55,17 +56,22 @@ class MyBot(Client):
 		
 		if self.is_off:
 			return
-
+		
+		is_changed = False
+		
 		if message_text == 'bot ban':
 			chats[f'{current_chat["thread_id"]}']['ban'] = True
+			is_changed = True
 		if message_text == 'bot unban':
 			chats[f'{current_chat["thread_id"]}']['ban'] = False
-
-		with open('config/chats.json', 'w') as file:
-			json.dump(chats, file)
+			is_changed = True
+		
+		if is_changed:
+			with open('config/chats.json', 'w') as file:
+				json.dump(chats, file)
 	
 	def bot_active(self, mes_text, author_id, chat):
-		activations = ['bot', 'bocie', 'boot', 'robbie', 'robot', '@robbie fizbot', '@robbie']
+		activations = ['bot', 'bocie', 'boot', 'robbie']
 		
 		if mes_text in activations:
 			
@@ -109,13 +115,10 @@ class MyBot(Client):
 		return chat
 	
 	def interaction(self, message_obj, chat):
-		
 		message_text = message_obj.text.lower()
 		prediction = my_bot.predict_label(message_text)
 		
 		answ = answ_gen.generate_answer(prediction, message_text)
-		
-		chat_db.write_chat(chat['thread_id'], message_obj.author, message_text, answ)
 		
 		if answ != "":
 			if 'img:' in answ:
@@ -130,6 +133,8 @@ class MyBot(Client):
 					thread_id=chat['thread_id'],
 					thread_type=ThreadType.USER if chat['thread_type'] == 'User' else ThreadType.GROUP
 				)
+		
+		chat_db.write_chat(chat['thread_id'], message_obj.author, message_text, answ)
 	
 	def onMessage(self, author_id, message_object, thread_id, thread_type, **kwargs):
 		self.markAsDelivered(thread_id, message_object.uid)
@@ -139,7 +144,6 @@ class MyBot(Client):
 		
 		if str(author_id) == self.admin_id or author_id == self.uid:
 			self.admin_commands(current_chat, message_text)
-		
 		if f'{author_id}' == f'{self.uid}':
 			return
 		
@@ -147,7 +151,6 @@ class MyBot(Client):
 		
 		if self.is_off:
 			return
-
 		if current_chat['ban']:
 			return
 		
