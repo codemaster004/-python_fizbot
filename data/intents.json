@@ -1,0 +1,189 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": ["Hej", "heej", "no hejj", "Hi", "Cześć", "Halo", "siema Robbie", "elo"],
+			"responses": ["Hej!", "Cześć!"]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": ["Pa", "Papa", "Do zobaczenia", "Narazie", "robbie bye"],
+			"responses": ["Pa."]
+		},
+		{
+			"tag": "thanks",
+			"patterns": ["dzięki", "dziekuje", "danke"],
+			"responses": ["Nie ma za co", "Ciesze sie ze mogłem pomoc"]
+		},
+		{
+			"tag": "feel",
+			"patterns": ["Jak się czujesz?", "Jak tam?", "Co tam?", "jak się masz?"],
+			"responses": ["Nie najgorzej, dzięki", "Świetnie, dziekuje", "Gotowy by ci pomóc"]
+		},
+		{
+			"tag": "stefan",
+			"patterns": ["założę się że gdyby nazywał się stefan odpowiadał by", "hej stefan", "team stefan", "stefan"],
+			"responses": ["Nie jestem Stefan"]
+		},
+		{
+			"tag": "work",
+			"patterns": ["co robisz?", "czym się zajmujesz"],
+			"responses": ["Ucze się fizy i gadać z ludzmi.", "rozwiazuje fizyke za ludzi"]
+		},
+		{
+			"tag": "stupid",
+			"patterns": ["głupi jesteś?", "głupi", "debil jestes", "no co za debil"],
+			"responses": ["Staram się nie być", "moze troche"]
+		},
+		{
+			"tag": "like_me",
+			"patterns": ["lubimy się?", "lubisz mnie?"],
+			"responses": ["No pewnie", "chyba tak"]
+		},
+		{
+			"tag": "weather",
+			"patterns": ["ładna pogoda", "pogoda"],
+			"responses": ["nie wiem, jestem zamkniety w serwerze", "nie wiem nie mam okna :("]
+		},
+		{
+			"tag": "name",
+			"patterns": ["Jak masz imię", "jak się nazywasz"],
+			"responses": ["Jestem Robbie.", "Robbie"]
+		},
+		{
+			"tag": "age",
+			"patterns": ["Ile masz lat", "Jak stary jesteś", "Jesteś młody", "jak stary jestes"],
+			"responses": ["Mam 17 lat", "Jestem 17'nasto latkiem", "Teoretycznie 17"]
+		},
+		{
+			"tag": "notes",
+			"patterns": ["notatki", "notatki", "hej poproszę notatki"],
+			"responses": ["https://drive.google.com/drive/u/1/folders/1c1RwFoLWyrK43VLgMqJNDDsLp7wD0z9l"]
+		},
+		{
+			"tag": "plan",
+			"patterns": ["plan lekcji", "jaki mamy terminarz", "plan", "masz może plan"],
+			"responses": ["<plan>"]
+		},
+		{
+			"tag": "lesson",
+			"patterns": ["lekcja", "lekcje"],
+			"responses": ["<lesson>"]
+		},
+		{
+			"tag": "fiz_kinetic_energy",
+			"patterns": ["energia kinetyczna", "energie kinetyczna", "energi kinetycznej", "energia k"],
+			"responses": ["wzor: Ek = (m * v\u00B2) / 2\nm - masa\nv - prędkość\n\nDeficja: Energia kinetyczna - energia, która posiada ciało będące w ruchu względem wybranego przez nas układu odniesienia. Energia kinetyczna jest równa pracy, wykonanej do rozpędzenia ciała do prędkości z jaką się porusza.\nJednostka: J (Dżul)"]
+		},
+		{
+			"tag": "fiz_potential_energy",
+			"patterns": ["energia potencjalnej", "energia potencjalna", "energi potencjalnej", "enegia p"],
+			"responses": ["wzor: Ep = m * g * h\nm - masa\ng - przyspieszenie ziemskie\nh - wysokość, \n\nDefinicja: Energia potencjalna - energia, którą posiada ciało z uwagi na swoje położenie lub stan. Ciało posiadające energię potencjalną ma potencjał do wykonania pracy.\n\nJednostka: J (Dżul)"]
+		},
+		{
+			"tag": "fiz_period_of_vibration",
+			"patterns": ["Okres drgan", "okres wachadla", "duze t", "wielkie t", "drgania", "okres"],
+			"responses": ["wzór (wachadło spręrzynowego):\nT = 2 \u03c0 * \u221a(m / k)\nm - masa\nk - współczynnik sprężystości\n\nwzór (wachadło matematyczne):\nT = 2 \u03c0 * \u221a(l / g)\nl - długosc wachadła\ng - przyspieszenie ziemskie\n\nDefinicja: okres ruchu (drgań) - czas w którym ciało wykonało jeden pełny obieg\n\nJednostka: J (Dżul)"]
+		},
+		{
+			"tag": "fiz_swing",
+			"patterns": ["wychylenie", "małe x"],
+			"responses": ["wzor: x = A * sin(\u03b1 + \u03c10)\nA - amplituda\n\u03b1 - alfa\n\u03c10 - faza początkowa\n\nJednostka: m (Metr)"]
+		},
+		{
+			"tag": "fiz_inertial_force",
+			"patterns": ["siła bezwładności", "siłę bezwładności", "bezwładność", "siły bezwładności"],
+			"responses": ["wzor: Fb = -m * a\nm - masa\na - przyspieszenie\n\nDefinicja: siła bezwładności jest to siła pozorna działająca na ciało będące w układzie nieinercjalnym, spowodowana przyspieszeniem układu.\n\nJednostka: N (Newton)"]
+		},
+		{
+			"tag": "fiz_mathematical_pendulum",
+			"patterns": ["wachadło matematyczne", "wachadła matematycznego", "wahadło matematyczne"],
+			"responses": ["Wahadło matematyczne -  ciało zawieszone na długiej, nieważkiej, nierozciagliwej nitce której masa jest bardzo mała w porównaniu z masa wahadła"]
+		},
+		{
+			"tag": "fiz_harmonic_movement",
+			"patterns": ["ruch harmoniczny", "ruchu harmonicznego", "ruch drgający", "ruch harmoniczny"],
+			"responses": ["ruch harmoniczny (drgający prosty) - ruch w którym działająca siła jest proporcjonalna do wychylenia ale skierowana przeciwnie"]
+		},
+		{
+			"tag": "fiz_frequency",
+			"patterns": ["częstotliwość", "czestotliwosc", "małe f"],
+			"responses": ["wzor: f = 1 / T\nT - okres drgań\n\ndefinicja: Częstotliwość - ilość obrotów wykonanych przez ciało w ciągu 1 sekundy.\nJednostką: Hz (herc)"]
+		},
+		{
+			"tag": "fiz_movement_phase",
+			"patterns": ["faza ruchu", "wzór na alfe", "alfa"],
+			"responses": ["wzor: \u03b1 = \u03c9 * t\n\u03c9 - omega\nt - czas\n\ndefinicja: faza ruchu - wielkość ta określa kierunek i wartość wychylenia\n\nJednostka: rad (Radian)"]
+		},
+		{
+			"tag": "fiz_omega",
+			"patterns": ["omega", "predkosc katowa", "predkosc kontowa", "Częstość kątowa", "pulsacja"],
+			"responses": ["Wzór: \u03c9 = 2 * π / T\n\nT - okres drgań\n\nDefinicja: Częstość kątowa (pulsacja) jest wielkością fizyczną opisującą drgania harmoniczne i określającą szybkość zmian fazy drgania.\nJednostka: rad/s (radian na sekundę)"]
+		},
+		{
+			"tag": "fiz_amplitude",
+			"patterns": ["amplituda", "maksymalne wychylenie", "duze A", "wielki A"],
+			"responses": ["amplituda - maksymalne wychylenie z położenia równowagi\n\nJednostka: m (Metr)"]
+		},
+		{
+			"tag": "fiz_spring_force",
+			"patterns": ["siła sprężystości", "Sprężystość siła", "wielkie F sprezystosci", "duze F sprezyny"],
+			"responses": ["Wzór: Fs = -k * x\nk - współczynnik sprężystości\nx - wychylenie\n\nDefinicja: Siła sprężystości jest siłą przywracającą odkształconemu sprężyście ciału jego pierwotny kształt. Siła sprężystości jest proporcjonalna do odkształcenia ciała.\n\nJednostka: N (Newton)"]
+		},
+		{
+			"tag": "fiz_elasticity_coefficient",
+			"patterns": ["współczynnik sprężystości", "współczynnik spręrzyny"],
+			"responses": ["Wzór: k = m * \u03c9\u00B2\nm - masa\n\u03c9 - omega\n\nDefinicja: Współczynnik sprężystości - stała określająca wielkość odkształcenia w odpowiedzi na siły działające na ciała sprężyste.\n\nJednostka: N/m (Newton ma metr)"]
+		},
+		{
+			"tag": "fiz_harmonic_velocity",
+			"patterns": ["Prędkość ruchu harmonicznym", "male v ruchu harmonicznego", "małe v harmoniczne", "prędkość", "szybkość"],
+			"responses": ["v = A * \u03c9 * cos(\u03c9 * t)\nA - amplituda\n\u03c9 - omega\nt - czas\n\nv max = A * \u03c9, ponieważ cos wynosi 1\nCiało posiada prędkość maksymalną w położeniu równowagi. W największym możliwym wychyleniu wynosi 0.\n\nJednostka: m/s (Metr na sekunde)"]
+		},
+		{
+			"tag": "frz_harmonic_force",
+			"patterns": ["siła ruchu harmonicznym", "sile harmoniczna"],
+			"responses": ["F = -m * \u03c9\u00B2 * x\nm - masa\n\u03c9 - omega\nx - wychylenie\n\nPs. znak - oznacza zwrot przeciwny do wychylenia\n\nJednostka: N (Newton)"]
+		},
+		{
+			"tag": "fiz_harmonic_acceleration",
+			"patterns": ["przyspieszenie", "wzor na przyspiesznie", "małe a"],
+			"responses": ["a = - \u03c9\u00B2 * x\n\u03c9 - omega\nx - wychylenie\n\na max = A * \u03c9\u00B2, ponieważ największe możliwe wychylenie to amplituda\nA - amplituda\n\nJednostka: m/s\u00B2 (Metr na sekunde kwadrat)"]
+		},
+		{
+			"tag": "fiz_energy_of_spring_pendulum",
+			"patterns": ["energia wahadła sprężynowego", "energia ruchu harmonicznym", "energia sprężystości", "energia sprężyny"],
+			"responses": ["E = (m * \u03c9\u00B2 * A\u00B2) / 2\nm - masa\n\u03c9 - omega\nA - amplituda\n\nJednostka: J (Dżul)"]
+		},
+		{
+			"tag": "fiz_first_law_of_dynamics",
+			"patterns": ["pierwsza zasada dynamiki", "zasada dynamiki 1"],
+			"responses": ["Jeżeli na ciało nie działają siły zewnętrzne lub działające siły równoważą się, to ciało pozostaje w spoczynku lub porusza się ruchem jednostajnym prostoliniowym względem inercjalnego układu odniesienia."]
+		},
+		{
+			"tag": "fiz_second_law_of_dynamics",
+			"patterns": ["druga zasada dynamiki", "zasada dynamiki 2"],
+			"responses": ["Jeżeli siły działające na ciało nie równoważą się to ciało porusza się z przyspieszeniem wprost proporcjonalnym do wypadkowej sił działające na to ciało i odwrotnie proporcjonalnym do masy ciała\n\nwzor: a = Fw / m\na - przyspieszenie\nFw - siła wypadkowa\nm - masa"]
+		},
+		{
+			"tag": "fiz_third_law_of_dynamics",
+			"patterns": ["trzecia zasada dynamiki", "zasada dynamiki 3"],
+			"responses": ["Gdy ciało A działa na ciało B pewną siłą to ciało B oddziałuje na ciało A z siłą o tej samej wartości tym samym kierunku lecz przeciwnych zwrotach siły te nie mogą się równoważyć ponieważ przyłożone są do dwóch różnych ciał"]
+		},
+		{
+			"tag": "fiz_spring_pendulum",
+			"patterns": ["wahadło sprężynowe", "wachadła sprężynowego"],
+			"responses": ["Definicja: Wahadło sprężynowe - ciało zawieszone na sprężynie, które może wykonywać drgania swobodne pod wpływem działającej na ciało sprężyny."]
+		},
+		{
+			"tag": "fiz_sin",
+			"patterns": ["sin", "cos", "sinus"],
+			"responses": ["img:images/sin_table.png"]
+		},
+		{
+			"tag": "fiz_radian",
+			"patterns": ["radian"],
+			"responses": ["Radian(rad) jest miarą kąta, w którym długość łuku jest równa promieniowi okręgu.\n\n360°=2π rad\n180°=π rad\n90°=π/2 rad\n45°=π/4 rad\n30°=π/6 rad\n\nRadian jest używany w ruchu po okręgu oraz w ruchu harmonicznym, przy obliczaniu funkcjii trygonometrycznych."]
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": ["Hi", "Hello", "Morning", "Anyone there", "Whats up"],
+			"responses": ["Hello!", "Hi!"]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": ["Bye", "Goodbye", "See you", "See you later"],
+			"responses": ["Bye."]
+		},
+		{
+			"tag": "feel",
+			"patterns": ["How are you", "How do you feel", "Whats up"],
+			"responses": ["Not bad, Thanks", "Great Thanks", "I am ready to help you!"]
+		},
+		{
+			"tag": "name",
+			"patterns": ["whats your name", "Who are you", "what is your username"],
+			"responses": ["I'm Jobbie"]
+		},
+		{
+			"tag": "age",
+			"patterns": ["How old are You", "What is your age", "how young you are"],
+			"responses": ["I am 17 years young", "I'm 17", "17, in theory."]
+		},
+		{
+			"tag": "ab_split_test",
+			"patterns": ["What is A/B split testing", "How can I use AB spliting testing", "A / B split testing", "AB test"],
+			"responses": ["A/B split testing:\nDefinition: The process of running simultaneous experiments across multiple pages to determine which one performs the best.\n\nUsege: Marketers use A/B testing to compare two or more elements within a website or piece of content such as copy, email content, landing pages and lead ads."]
+		},
+		{
+			"tag": "activity_feed",
+			"patterns": ["What is activity feed"],
+			"responses": ["Activity feed:\nDefinition: A real-time summary of actions a user takes on a website or web page. It highlights users behavior by tracking cookies and aggregating data into a visual feed.\n\nUsege: Activity feeds give marketers an overview of the interactions and communication users have with a website and may take the form of announcements, messages, login times, etc."]
+		},
+		{
+			"tag": "affiliate_marketing",
+			"patterns": ["What is Affiliate marketing"],
+			"responses": ["Affiliate marketing:\nDefinition: A strategy used by content marketers and bloggers to promote products, services or ideas. Affiliate marketers generate passive income by earning commission from advertising the brand of an individual or company.\n\nUsege: This marketing tactic helps companies drive sales and generate revenue."]
+		},
+		{
+			"tag": "api",
+			"patterns": ["what is api"],
+			"responses": ["API (Application Programming Interface):\nDefinition: A set of protocols and specific standards of communication used for building software applications. It determines how components of a software application should interact. By interpreting data and presenting understandable information.\n\nUsege: API enables the connection and communication between two different programs."]
+		},
+		{
+			"tag": "ai",
+			"patterns": ["what is ai"],
+			"patterns": ["AI (Artificial Intelligence):\nDefinition: An area of computer science that creates, programmes and designs intelligent machines to work, react and “think” like humans.\n\nUsage:Through processing large amounts of data and patterns, AI teaches computers to manage and achieve specific tasks including speech recognition, learning, planning and problem-solving."]
+		},
+		{
+			"tag": "analytics",
+			"patterns": ["what is analytics"],
+			"responses": []
+		}
+	]
+}
